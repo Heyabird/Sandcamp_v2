@@ -19,14 +19,14 @@ default: &default
 
 development:
   <<: *default
-  database: sandcampv2_development
+  database: sandcamp_new_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: sandcampv2_test
+  database: sandcamp_new_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: sandcampv2_production
-  username: sandcampv2
-  password: <%= ENV['SANDCAMPV2_DATABASE_PASSWORD'] %>
+  database: sandcamp_new_production
+  username: sandcamp_new
+  password: <%= ENV['SANDCAMP_NEW_DATABASE_PASSWORD'] %>

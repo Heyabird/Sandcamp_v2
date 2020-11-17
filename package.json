@@ -1,5 +1,5 @@
 {
-  "name": "sandcampv2",
+  "name": "sandcamp_new",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
