@@ -6,6 +6,9 @@ ruby '2.7.0'
 #Figaro gem
 gem 'figaro'
 
+#Spotify
+gem 'rspotify'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use mysql as the database for Active Record
