@@ -1,3 +1,211 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+// .page-header {
+//     margin-top: 3rem;
+// }
+
+// .artist-name-field {
+//     max-width: 70%;
+// }
+
+body {
+    font-family: 'Helvetica Nueue', sans-serif !important;
+  }
+  
+  .top-divider {
+    height: 0;
+    border-top: 2px dotted #ccc;
+    padding: 26px 0;
+  }
+  
+  .nav-bar {
+    display: flex;
+    padding: 10px 40px;
+  }
+  
+  .logo img {
+    width: 110px;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    // color: white !important;
+  }
+  
+  .logo {
+  }
+  
+  .form-control {
+    width: 282px !important;
+    background-color: #F3F3F3 !important;
+    border: none !important;
+    border-radius: 3px !important;
+    font-size: 14px !important;
+    font-weight: 200;
+  }
+  
+  .dropdown-contents {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 14px;
+    width: 282px;
+    top: 44px;
+  }
+  
+  .dropdown-content {
+    display: block;
+    position: relative;
+    height:50px;
+    padding: 0px 20px;
+    line-height: 50px;
+    background-color: red;
+    color:white !important;
+  }
+  
+  .dropdown-content:hover {
+    opacity: .7;
+  }
+  
+  .arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  
+  .search-bar {
+    margin-left: 2rem;
+    width: 282px;
+    display: flex;
+  }
+  
+  .search-bar:hover .dropdown-contents{
+    display: block;
+    visibility: visible;
+  }
+  
+  .search-btn {
+    background-image:url('/assets/search.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .form-group {
+    display: flex;
+    margin-bottom: 0 !important;
+  }
+  
+  /*intro-section*/
+  #intro-section {
+    display: inline-block;
+    background-image: url('/assets/sand.jpg');
+    background-position: bottom;
+    width: 100%;
+    height: 33rem;
+  }
+  .first-col {
+    width: 10rem;
+    margin: 0;
+  }
+  .second-col {
+    width: 10rem;
+    margin: 0;
+  }
+  
+  #show_btn a{
+    background-color: blue;
+  }
+  
+  #user-nav {
+    position: absolute;
+    right: 1rem;
+  }
+  
+  #user-nav a{
+    color: black;
+  }
+  
+  // auth pages
+  .auth_nav {
+    background-color:#dddddd;
+    height: 107px;
+  }
+  
+   a {
+    color: rgb(0,161,198) !important;
+  }
+  
+  .auth_logo img{
+    // background: transparent url(/img/bandcamp-logo-color-bcaqua.svg) no-repeat;
+    // background-size: 100%;
+    margin: 35px 0 0 54px;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    // width: 135px;
+    // margin: 0.67em 0;
+  }
+  
+  .auth_page {
+    // fill the whole page;
+    position: absolute; top: 0; left: 0; height: 100%; width: 100%;
+    background-color: #f3f3f3;
+    margin: auto;
+    text-align: center;
+    // padding-top: 2rem;
+  }
+  
+  .content {
+    width: 650px;
+    min-height: 550px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  
+  .content h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 36px;
+  }
+  
+  #user_email, #user_password {
+    background-color: white !important;
+    width: 300px;
+    height: 35px;
+    border: 1px solid #ccc;
+    margin: 12px 170px 12px 0;
+  }
+  
+  .email_label, .pw_label {
+    width: 155px;
+    text-align: right;
+    margin-right: 15px;
+  }
+  
+  .auth_btn {
+    background-color: #00a1c6;
+    color: white;
+    border: none;
+    width: 300px;
+    height: 35px;
+    margin: 20px 0 90px 0;
+  }
+  
+  .test {
+    background-color: red;
+  }
