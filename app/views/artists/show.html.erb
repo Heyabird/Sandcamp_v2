@@ -1,2 +1,15 @@
-<h1>Artists#show</h1>
-<p>Find me in app/views/artists/show.html.erb</p>
+<div class="container">
+  <h1 class="page-header"><%= @artist.name %></h1>
+  <% @artist.albums(limit:5).each do |album| %>
+    <h3><%= album.name %></h3>
+    <h5>popularity: <%= album.popularity %></h5>
+    <ol>
+      <% album.tracks.each do |track| %>
+        <%# <%= album.images[0].url %> 
+        <li>
+          <%= track.name %>
+        </li>
+      <% end %>
+    </ol>
+  <% end %>
+</div>
