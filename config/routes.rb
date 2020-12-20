@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :collections
   get 'artists/index'
   get 'artists/show'
   devise_for :users
@@ -7,6 +8,5 @@ Rails.application.routes.draw do
   root 'home#index'
   get '/artists', to: 'artists#index'
   get '/artists/:id', to:'artists#show', as: 'artist'
-  get '/collection', to: 'collection#index'
 
 end
