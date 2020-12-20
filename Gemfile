@@ -54,3 +54,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "devise", "~> 4.7"
 
 gem "bootstrap", "~> 4.5"
+
+# Heroku defaults to postgres so using postgres
+group :production do
+  gem 'pg'
+  gem 'rails_12factor', '0.0.2'
+end
