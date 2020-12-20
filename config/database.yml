@@ -49,7 +49,7 @@ test:
 #
 production:
   url: <%= ENV['DATABASE_URL'] %>
-  <<: *default
+  # <<: *default
   # database: sandcamp_new_production
   # username: sandcamp_new
   # password: <%= ENV['SANDCAMP_NEW_DATABASE_PASSWORD'] %>
