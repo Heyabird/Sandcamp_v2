@@ -1,6 +1,7 @@
 <div class="container">
   <h1 class="page-header"><%= @artist.name %></h1>
   <% @artist.albums(limit:5).each do |album| %>
+    <Button class="save_btn">Save</Button>
     <h3><%= album.name %></h3>
     <h5>popularity: <%= album.popularity %></h5>
     <ol>
