@@ -7,18 +7,6 @@
       <%= text_field_tag(:artist_name, "", placeholder: "Enter artist name", class: "form-control") %>
       <%= submit_tag " ", class: "btn search-btn" %>
     </div>
-    <%# <div class="dropdown-contents">
-        <a class="dropdown-content" style="background-color:#F69C59;" href="https://bandcamp.com/tag/electronic">electronic <i class="arrow right"></i></a>
-        <a class="dropdown-content" style="background-color:#F3684C;" href="https://bandcamp.com/tag/metal/">metal <i class="arrow right"></i></a>
-        <a class="dropdown-content" style="background-color:#DA222F;" href="https://bandcamp.com/tag/rock/">rock <i class="arrow right"></i></a>
-        <a class="dropdown-content" style="background-color:#CE2F62;" href="https://bandcamp.com/tag/alternative/">alternative <i class="arrow right"></i></a>
-        <a class="dropdown-content" style="background-color:#B93698;" href="https://bandcamp.com/tag/hip-hop/rap/">hip-hop/rap <i class="arrow right"></i></a>
-        <a class="dropdown-content" style="background-color:#9157B8;" href="https://bandcamp.com/tag/experimental/">experimental <i class="arrow right"></i></a>
-        <a class="dropdown-content" style="background-color:#7667A8;" href="https://bandcamp.com/tag/punk/">punk <i class="arrow right"></i></a>
-        <a class="dropdown-content" style="background-color:#7B85C4;" href="https://bandcamp.com/tag/pop/">pop <i class="arrow right"></i></a>
-        <a class="dropdown-content" style="background-color:#7C9EBD;" href="https://bandcamp.com/tag/ambient/">ambient <i class="arrow right"></i></a>
-        <a class="dropdown-content" style="background-color:#2D2D2D;" href="https://bandcamp.com/?t=undefined&g=all#discover">browse all <i class="arrow right"></i></a>
-    </div> %>
     <% end %>
   </div>
 
@@ -35,8 +23,15 @@
   </div>
 </nav>
 
-<p>Collection</p>
+<p><b>My Collections</b></p>
 
 <div id="collection-section">
-        
+  <% for album in @collections%>
+    <div class="collection">
+      <b> <%= album.album_name %> </b>
+      <br/>
+      by <%= album.artist_name %>
+      <br/>
+    </div>
+  <% end %>
 </div>
