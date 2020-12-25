@@ -32,6 +32,7 @@
       <br/>
       by <%= album.artist_name %>
       <br/>
+      <p id="show_btn"> <%= link_to "Show", collection_path(album.id) %> </p>
     </div>
   <% end %>
 </div>
