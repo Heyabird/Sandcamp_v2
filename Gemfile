@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
-#Figaro gem
+#Figaro gem; uses YAML file for config values and prevents the file from being uploaded to the remote repo.
 gem 'figaro'
 
 #Spotify
@@ -54,6 +54,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "devise", "~> 4.7"
 
 gem "bootstrap", "~> 4.5"
+
+gem 'react-rails'
 
 # Heroku defaults to postgres so using postgres
 # group :production do
